@@ -147,3 +147,7 @@ Chinese Dirtionary Of DiffSinger: [Multi-langs_Dictionary](https://github.com/co
 
 Any organization or individual is prohibited from using any technology in this repo to generate or edit someone's speech without his/her consent, including but not limited to government leaders, political figures, and celebrities. If you do not comply with this item, you could be in violation of copyright laws.
 
+
+## Running
+
+- run with: `python ./app.py`
