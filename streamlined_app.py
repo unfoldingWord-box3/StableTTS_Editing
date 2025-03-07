@@ -22,7 +22,7 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
-tts_model_path = 'checkpoints/checkpoint_2850.pt'
+tts_model_path = './checkpoints/checkpoint_2850.pt'
 vocoder_model_path = './vocoders/pretrained/firefly-gan-base-generator.ckpt'
 vocoder_type = 'ffgan'
 wisper_model = "large"

@@ -150,4 +150,5 @@ Any organization or individual is prohibited from using any technology in this r
 
 ## Running
 
-- run with: `python ./app.py`
+- run lead in/lead out example with: `python ./app.py`
+- run more advanced text edit example with: `python ./streamlined_app.py`
