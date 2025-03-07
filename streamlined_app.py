@@ -1,4 +1,6 @@
 import os
+import ssl
+
 os.environ['TMPDIR'] = './temps' # avoid the system default temp folder not having access permissions
 # os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com' # use huggingfacae mirror for users that could not login to huggingface
 
@@ -18,10 +20,12 @@ from pydub import AudioSegment
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-tts_model_path = './checkpoints/checkpoint_0.pt'
+ssl._create_default_https_context = ssl._create_unverified_context
+
+tts_model_path = 'checkpoints/checkpoint_2850.pt'
 vocoder_model_path = './vocoders/pretrained/firefly-gan-base-generator.ckpt'
 vocoder_type = 'ffgan'
-wisper_model = "tiny.en"
+wisper_model = "large"
 
 model = StableTTSAPI(tts_model_path, vocoder_model_path, vocoder_type).to(device)
 

@@ -106,7 +106,7 @@ class StableTTSAPI(nn.Module):
     
 if __name__ == '__main__':
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    tts_model_path = './checkpoints/checkpoint_0.pt'
+    tts_model_path = 'checkpoints/checkpoint_2850.pt'
     vocoder_model_path = './vocoders/pretrained/vocos.pt'
     
     model = StableTTSAPI(tts_model_path, vocoder_model_path, 'vocos')
